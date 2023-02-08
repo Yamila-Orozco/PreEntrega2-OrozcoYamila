@@ -1,0 +1,436 @@
+/* generales resets */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* paleta de colores
+azul claro #7291F9 
+bordo claro #F25C78
+rosa #E66BBA
+violetaazul #310062
+azul marino #3B3086
+crema #FAE0D8
+gris blanco #F2F2F2
+*/
+
+/* INDEX */
+/*CONTENIDO GRAL INDEX */
+body {
+    font-size: 16px;/* 1rem = 10px */
+    font-family:'Acier Bat Noir', sans-serif;
+}
+ /* TIPOGRAFIAS */
+h1{
+    font-family: 'Archistico', sans-serif;                                                
+    font-size: 5.8rem;  
+    font-weight: bolder;
+    color: #4e52a0;
+}
+
+h2 {
+    font-family: acier-bat-gris,sans-serif;
+    font-weight: 400;
+    font-size: 2.8rem;
+    font-style: normal;
+    color: #E66BBA;
+}
+
+h3 {
+    font: 'Rift', sans-serif; 
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: #4e52a0;
+    }
+
+h1,h2,h3 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-family: 'Rift', sans-serif; 
+    font-size: 1.4rem;
+    font-weight: lighter;
+    color: #313131
+}
+
+/* HEADER */
+main{
+    margin-top: 255px;
+}
+
+/* NAV BAR */
+nav {
+    width: 100%;
+}
+
+/* NAV BAR LOGO */
+.logonavid {
+    max-width: 60px;
+    max-height: 60px;
+    background: transparent;
+    align-self: flex-end;
+}
+
+.menu {
+    font-family: 'Rift', sans-serif;
+    font-weight:normal;
+    font-size:larger;
+    text-align: center;
+    color: #3B3086;
+    position: fixed;
+    z-index:100;
+    background-color: #F2F2F2;
+    top: 0;
+    display: inline-flexbox;
+    align-content: space-between;
+}
+
+li a {
+    font-family: 'Rift', sans-serif;
+    font-weight:bold;
+    font-size:larger;
+    text-align: center;
+    color: #161616;
+}
+
+/* SUBITEMS DE LA NAVBAR */
+    ul {
+        list-style: none;
+        font-size:0 /* truco por el uso de inline-block*/
+     }
+
+     li {
+        display: inline-block;
+        width: 25%;
+        position:relative;
+        font-size: 14px
+     }
+     ul ul {
+        position: absolute;
+        display: none;
+     }
+     ul ul li {
+        display: block;
+     }
+     ul li:hover ul {
+        display:block;
+     }
+     
+/* MAIN */
+/* video explicación */
+h2 img{
+    padding: 25px 50px;
+    background: transparent;
+    opacity: 0.87;
+     }
+
+/* CARDS*/
+.wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+   max-width: 300px;
+    min-height: 250px;
+    background: #F2F2F2;
+    padding: 30px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: #310062;
+    margin:20px;
+    box-shadow: rgb(50 50 93 / 25%) 0px 30px 60px -12px, rgb(0 0 0 / 30%) 0px 18px 36px -18px;
+}
+
+.card:nth-child(2){
+   background: #E66BBA;
+}
+.card:last-child{
+   background: #E66BBA;
+}
+.card-title{
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+.card-content{
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+}
+
+.cardimage{
+    object-fit: cover
+}
+.card-btn{
+    all: unset;
+    display: block;
+    margin-left: auto;
+    border: 2px solid #FFF;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-size: 10px;
+    font-weight: 600;
+    transition: all 0.5s;
+    cursor: pointer;
+    letter-spacing: 1.2px;
+}
+
+.card-btn:hover{
+   color:#673ab7;
+   background: #FFF;
+}
+.card:nth-child(2) .card-btn:hover{
+   color:#7291F9 ;
+   background: #FFF;
+}
+.card:last-child .card-btn:hover{
+   color:#673ab7;
+    background: #FFF;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #527FD9;
+    text-align: left;
+    padding: 2%;
+}
+
+/* FOOTER ICONOS REDES */
+footer a i {
+    color: #fff;
+    font-size: 50px;
+    text-align: left;
+    justify-content: flex-end;
+    padding: 1%;
+}
+
+main a i{
+    color: #527FD9;
+    font-size: 50px;
+    text-align: left;
+    flex-direction: column;
+}
+
+.scroll a{
+    color: #7291F9;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ENLACES*/
+a {
+    text-decoration: none;
+}
+
+/* IMAGENES */
+img {
+    align-content: center;
+}
+
+ /* CUADROS CONTENEDORES */
+ .maincontainer{
+    padding: 10px;
+    margin-bottom: 10px;
+ }
+
+/* TEXTURAS */
+.bluetornpapertexture {
+    border-radius: 99px;
+    background-image:url(../assets/texturas/bluetornpapertexture.png);
+    background-repeat:no-repeat;
+}
+
+.pinktornpapertexture {
+    border-radius: 99px;
+    background-image:url(../assets/texturas/pinktornpapertexture.png);
+    background-repeat:no-repeat; 
+}
+
+.bluebookspapertexture {
+    border-radius: 0;    
+    background-image:url(../assets/texturas/bluebookspapertexture.jpg);
+    padding: 8%;
+}
+
+.formsbackground {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    background: #dce5f7;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* VIDEOS */
+.containervideo {
+    display: flex;
+    justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 520px;
+    height: 520px;
+}
+
+/* BOTONES */
+.main-btn {
+    background-color: #F25C78;
+    color: #fff;
+    padding: 1rem 1rem;
+    margin-top: 1rem;
+    font-family: Rift;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    width: 148px;
+    height: 48px;
+    border-radius: 4px;
+}
+
+
+.secondary-btn {
+    background-color: #F2F2F2;
+    color: #F25C78;
+    padding: 1 rem 1.5rem;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    border-radius: 1.5 rem;
+    border: #F25C78;
+    border-style: solid;
+    text-align: center;
+    font-family: Rift;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0em;
+    line-height: 30px;
+    width: 112px;
+    height: 48px;
+}
+
+.start-btn {
+    background-color: #F25C78;
+    color: #fff;
+    padding: 1 rem 1.5rem;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    border-radius: 1.5 rem;
+    text-align: center;
+    border: none;
+    font-family: Rift;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0em;
+    line-height: 30px;
+    width: 112px;
+    height: 48px;
+}
+
+.buttonssidebyside{
+    display: flex;
+    justify-content: center;
+    min-height: 0px;
+}
+
+       /* CURSORES */
+/* NAV HOVERS */
+header nav ul li a:hover {
+    color: #F25C78;
+    text-decoration:underline;
+}
+
+
+header nav ul li a img:hover {
+    transform: rotate(-180deg);
+}
+/* FOOTER ICON HOVERS */
+footer a i:hover {
+    color: #F25C78;
+
+}
+/* MAIN ICON HOVERS */
+aside a i:hover {
+    color: #F25C78;
+}
+
+/* iconos */
+.socialneticons {
+top: 263px;
+height: 32px;
+left: 1447 px;
+width:32px
+}
+
+.flexcolumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    z-index:100;
+  }
+
+/* CONTENEDORES */
+section{
+    margin: 5%;
+}
+
+/* contenedores prueba */
+
+div p .bluebookspapertexture {
+    width: -moz-fit-content;
+    width: fit-content;
+    overflow-wrap: normal;
+}
+
+/* PARALLAX */
+.parallax {
+    background-image: url("../assets/texturas/whitepapertexture.png");
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+    margin-bottom:50px;
+   }
+   
+.parallaxblog {
+
+    background-image: url("../assets/texturas/mathpapertexture.png");
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+    margin-bottom:50px;
+   }
+
+   /* ALINEACIÓN */
+.alignmentcenter{
+    text-align:center;
+}
+
+.alignhalf {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.alignhalf :first-child {
+        align-self: center;
+    }
+/* TABLA DE RECURSOS STYLE */
+.formstyle {
+    border: 5px; 
+    border-color: #673ab7;
+    border-style:solid;
+    padding: 10px; 
+    align-content: center}
+
+    /* testing scroll */
