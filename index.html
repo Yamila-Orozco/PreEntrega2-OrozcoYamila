@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
 <!-- style bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 <!-- mi css -->
@@ -27,46 +29,40 @@
 
 <header>
                                    <!--NAV-BAR-->
-       <nav class="menu">
-           <ul>
-            <li> <a href="./index.html"><img src="./assets/img/logo172x172.png" alt="logoindex"/></a> </li>
-                <li><a href="./views/nosotros.html">NOSOTRXS</a></li>
-                <li><a href="./views/cursos.html">CURSOS</a></li>
-                    <ul>
-                        <li>Cursos para Docentes</li> 
-<!-- aca deberia crear una pág? xq si no me abre un directorio --><!--      <li><a href= "./views/cursos/docentes/">Curso para docentes</a><li> -->
-                            <ul>
-                                <li><a href= "./views/cursos/docentes/nticsbasico.html">NTICS Básico para Docente</a></li>
-                                <li><a href= "./views/cursos/docentes/creacionderecursos.html">Creación de Recursos</a></li>
-                                <li><a href= "./views/cursos/docentes/organizaciondocente.html">Organización para Docentes</a></li>
-                                <li><a href= "./views/cursos/docentes/neuro.html">Investigación y Neuroeducación</a></li>
-                            </ul>
-                        <li>Cursos de Inglés</li>
-                            <ul>
-                                <li>ADULTOS</li>
-                                   <ul>
-                                        <li><a href= "./views/cursos/ingles/cursoingles/adultxs/adultxs1.html">Nivel 1</li>
-                                        <li><a href= "./views/cursos/ingles/cursoingles/adultxs/adultxs2.html">Nivel 1</li>
-                                    </ul>
-                                <li>NIÑXS</li>
-                                    <ul>
-                                        <li><a href= "./views/cursos/ingles/cursoingles/chicxs/chicxs1.html">Nivel 1</li>
-                                        <li><a href= "./views/cursos/ingles/cursoingles/chicxs/chicxs2.html">Nivel 1</li>
-                                    </ul>
-                            </ul>
-                    </ul>
-                <li><a href="./views/tienda.html">RECURSOS</a></li>
-                    <ul>
-                        <li>Calendario</li>
-                        <li>Agenda</li>
-                        <li>Hoja de Asistencia</li>
-                        <li>Planificaciones</li>
-                    </ul>
-                    <li><a href="./views/blog.html">BLOG</a></li>
-                    <li><a href="./views/contacto.html">CONTACTO</a></li>
-                    <li><input class="start-btn" type="submit" value="Iniciar sesión"></li>
-            </ul>
-        </nav>
+                                   <nav class="navbar navbar-expand-lg menu">
+                                    <div class="container-fluid">
+                                      <a class="navbar-brand" href="./assets/img/logo172x172.png"></a>
+                                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                      </button>
+                                      <li> <a href="../index.html"><img src="../assets/img/logo172x172.png" alt="logoindex"/></a> </li>
+                                      <div class="collapse navbar-collapse  justify-content-end" id="navbarNavDropdown">
+                                        <ul class="navbar-nav">
+                                    
+                                          <li>
+                                            <a class="active" aria-current="page" href="./views/nosotros.html">NOSOTRXS</a>
+                                          </li>
+                                          <li>
+                                            <a href="./views/blog.html">BLOG</a>
+                                          </li>
+                                          <li>
+                                            <a href="./views/contacto.html">CONTACTO</a>
+                                          </li>
+                                          <li>
+                                            <a href="./views/contacto.html">RECURSOS</a>
+                                          </li>
+                                          <li class="dropdown">
+                                            <a class="dropdown-toggle" href="./views/cursos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            CURSOS
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                              <li><a href="./views/cursos/docentes/creacionderecursos.html">CURSOS DOCENTES</a></li>
+                                              <li><a href="#">CURSOS DE INGLÉS</a></li>
+                                            </ul>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </nav>
 </header>
                                                          <!-- PANTALLA PPAL -->
 <main class="maincontainer">
@@ -199,8 +195,8 @@
     <a href="https://ar.linkedin.com/in/yamila-orozco?original_referer=https%3A%2F%2Fwww.google.com%2F"><i class="fa-brands fa-linkedin socialneticons"></i></a>
 </footer>
 
-<!-- testing -->
-
+<!--Scripts finales -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="./js/script.js"> </script>
 </body>
 </html>

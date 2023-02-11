@@ -75,16 +75,15 @@ nav {
 
 .menu {
     font-family: 'Rift', sans-serif;
-    font-weight:normal;
+    font-weight:lighter;
     font-size:larger;
     text-align: center;
     color: #3B3086;
-    position: fixed;
     z-index:100;
     background-color: #F2F2F2;
     top: 0;
-    display: inline-flexbox;
-    align-content: space-between;
+    position: fixed;
+    justify-content: end;
 }
 
 li a {
