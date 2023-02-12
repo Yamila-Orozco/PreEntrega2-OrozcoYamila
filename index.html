@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
 <!-- style bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 <!-- mi css -->
@@ -40,17 +39,29 @@
                     <li><a class="active" aria-current="page" href="./views/nosotros.html">NOSOTRXS</a></li>
                     <li><a href="./views/blog.html">BLOG</a></li>
                     <li><a href="./views/contacto.html">CONTACTO</a></li>
-                    <li><a href="./views/tienda.html">RECURSOS</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" href="./views/tienda.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">RECURSOS</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://orozcoyamilagisele.mercadoshops.com.ar/">CALENDARIO</a></li>
+                            <li><a href="https://orozcoyamilagisele.mercadoshops.com.ar/">AGENDA</a></li>
+                            <li><a href="https://orozcoyamilagisele.mercadoshops.com.ar/">PLANILLAS</a></li>
+                            <li><a href="https://orozcoyamilagisele.mercadoshops.com.ar/">PLANIFICACIONES</a></li>
+                            <li><a href="https://orozcoyamilagisele.mercadoshops.com.ar/">ACTAS</a></li>
+                        </ul>
+                    </li>
                     <li class="dropdown">
                         <a class="dropdown-toggle" href="./views/cursos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">CURSOS</a>
                         <ul class="dropdown-menu">
-                            <li><a href="./views/cursos/docentes/cursosdocentes.html">CURSOS DOCENTES</a></li>
-                            <li><a href="./views/cursos/ingles/cursosingles.html">CURSOS DE INGLÉS</a></li>
+                            <li><a href="./views/cursos.html">CURSOS</a></li>
+                            <li><a href="./views/cursos/cursosdocentes.html">DOCENTES</a></li>
+                            <li><a href="./views/cursos/cursosingles.html">INGLÉS</a></li>
                         </ul>
                     </li>
+                    <div class="action-buttons ml-auto navbar navbar-expand-lg"></div>
+                        <a href="./views/login.html" class="btn btn-primary">Inicia/Registrate</a>
                 </ul>
             </div>
-        </div>
+        </div>	
     </nav>
 </header>
                                                          <!-- PANTALLA PPAL -->
@@ -187,5 +198,8 @@
 <!--Scripts finales -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 <script src="./js/script.js"> </script>
+
+
+
 </body>
 </html>

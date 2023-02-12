@@ -25,49 +25,30 @@
     
 <header>
                                   <!--NAV-BAR-->
-       <nav class="menu">
-
-<!-- CORREGIR COLOR FONTS -->
-           <ul>
-            <li> <a href="../index.html"><img src="../assets/img/logo172x172.png" alt="logoindex"/></a> </li>
-            <li><a href="../views/nosotros.html">NOSOTRXS</a></li>
-                <li><a href="../views/cursos.html">CURSOS</a></li>
-                    <ul>
-                        <li>Cursos para Docentes</li> 
-<!-- aca deberia crear una pág? xq si no me abre un directorio --><!--      <li><a href= "./views/cursos/docentes/">Curso para docentes</a><li> -->
-                            <ul>
-                                <li><a href= "../views/cursos/docentes/nticsbasico.html">NTICS Básico para Docente</a></li>
-                                <li><a href= "../views/cursos/docentes/creacionderecursos.html">Creación de Recursos</a></li>
-                                <li><a href= "../views/cursos/docentes/organizaciondocente.html">Organización para Docentes</a></li>
-                                <li><a href= "../views/cursos/docentes/neuro.html">Investigación y Neuroeducación</a></li>
-                            </ul>
-                        <li>Cursos de Inglés</li>
-                            <ul>
-                                <li>ADULTOS</li>
-                                   <ul>
-                                        <li><a href= "../views/cursos/ingles/cursoingles/adultxs/adultxs1.html">Nivel 1</li>
-                                        <li><a href= "../views/cursos/ingles/cursoingles/adultxs/adultxs2.html">Nivel 1</li>
-
-                                    </ul>
-                                <li>NIÑXS</li>
-                                    <ul>
-                                        <li><a href= "../views/cursos/ingles/cursoingles/chicxs/chicxs1.html">Nivel 1</li>
-                                        <li><a href= "../views/cursos/ingles/cursoingles/chicxs/chicxs2.html">Nivel 1</li>
-                                    </ul>
-                            </ul>
-                    </ul>
-                <li><a href="../views/tienda.html">RECURSOS</a></li>
-                    <ul>
-                        <li>Calendario</li>
-                        <li>Agenda</li>
-                        <li>Hoja de Asistencia</li>
-                        <li>Planificaciones</li>
-                    </ul>
+    <nav class="navbar navbar-expand-lg menu">
+        <li> <a href="../index.html"><img class= "lg-animation"src="../assets/img/logo172x172.png" alt="logoindex"/></a> </li>
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li><a class="active" aria-current="page" href="../views/nosotros.html">NOSOTRXS</a></li>
                     <li><a href="../views/blog.html">BLOG</a></li>
                     <li><a href="../views/contacto.html">CONTACTO</a></li>
-                    <li><input class="start-btn" type="submit" value="Iniciar sesión"></li>
-            </ul>
-        </nav>
+                    <li><a href="../views/tienda.html">RECURSOS</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" href="../views/cursos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">CURSOS</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../views/cursos.html">CURSOS</a></li>
+                            <li><a href="../views/cursos/cursosdocentes.html">DOCENTES</a></li>
+                            <li><a href="../views/cursos/cursosingles.html">INGLÉS</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 </header>
 
 <!-- MAIN -->
