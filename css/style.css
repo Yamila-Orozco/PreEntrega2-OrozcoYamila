@@ -345,9 +345,13 @@ header nav ul li a:hover {
     text-decoration:underline;
 }
 
-
+/* LOGO MOVIMIENTO */
 header nav ul li a img:hover {
     transform: rotate(-180deg);
+}
+
+.lg-animation:hover {
+    transform: rotate(-180deg)
 }
 /* FOOTER ICON HOVERS */
 footer a i:hover {
