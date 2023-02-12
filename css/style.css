@@ -282,18 +282,15 @@ img {
 
 /* BOTONES */
 .main-btn {
-    background-color: #F25C78;
+    background-color: #7291F9;
     color: #fff;
     padding: 1rem 1rem;
-    margin-top: 1rem;
     font-family: Rift;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-decoration: none;
     font-weight: bold;
     text-align: center;
     border: none;
-    width: 148px;
-    height: 48px;
     border-radius: 4px;
 }
 
@@ -347,6 +344,7 @@ header nav ul li a:hover {
     color: #F25C78;
     text-decoration:underline;
 }
+
 
 /* LOGO MOVIMIENTO */
 header nav ul li a img:hover {
@@ -440,123 +438,120 @@ div p .bluebookspapertexture {
     align-content: center}
 
     /* testing registrarse btn */
-    .login-box{
-        position:relative;
-        margin: 10px auto;
-        width: 500px;
-        height: 380px;
-        background-color: #fff;
-        padding: 10px;
-        border-radius: 3px;
-        -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
-      -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
-      box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
-      }
-      .lb-header{
-        position:relative;
-        color: #00415d;
-        margin: 5px 5px 10px 5px;
-        padding-bottom:10px;
-        border-bottom: 1px solid #eee;
-        text-align:center;
-        height:28px;
-      }
-      .lb-header a{
-        margin: 0 25px;
-        padding: 0 20px;
-        text-decoration: none;
-        color: #666;
-        font-weight: bold;
-        font-size: 15px;
-        -webkit-transition: all 0.1s linear;
-        -moz-transition: all 0.1s linear;
-        transition: all 0.1s linear;
-      }
-      .lb-header .active{
-        color: #029f5b;
-        font-size: 18px;
-      }
-      .social-login{
-        position:relative;
-        float: left;
-        width: 100%;
-        height:auto;
-        padding: 10px 0 15px 0;
-        border-bottom: 1px solid #eee;
-      }
-      .social-login a{
-        position:relative;
-        float: left;
-        width:calc(40% - 8px);
-        text-decoration: none;
-        color: #fff;
-        border: 1px solid rgba(0,0,0,0.05);
-        padding: 12px;
-        border-radius: 2px;
-        font-size: 12px;
-        text-transform: uppercase;
-        margin: 0 3%;
-        text-align:center;
-      }
-      .social-login a i{
-        position: relative;
-        float: left;
-        width: 20px;
-        top: 2px;
-      }
-      .social-login a:first-child{
-        background-color: #49639F;
-      }
-      .social-login a:last-child{
-        background-color: #DF4A32;
-      }
-      .email-login,.email-signup{
-        position:relative;
-        float: left;
-        width: 100%;
-        height:auto;
-        margin-top: 20px;
-        text-align:center;
-      }
-      .u-form-group{
-        width:100%;
-        margin-bottom: 10px;
-      }
-      .u-form-group input[type="email"],
-      .u-form-group input[type="password"]{
-        width: calc(50% - 22px);
-        height:45px;
-        outline: none;
-        border: 1px solid #ddd;
-        padding: 0 10px;
-        border-radius: 2px;
-        color: #333;
-        font-size:0.8rem;
-        -webkit-transition:all 0.1s linear;
-        -moz-transition:all 0.1s linear;
-        transition:all 0.1s linear;
-      }
-      .u-form-group input:focus{
-        border-color: #358efb;
-      }
-      .u-form-group button{
-        width:50%;
-        background-color: #1CB94E;
-        border: none;
-        outline: none;
-        color: #fff;
-        font-size: 14px;
-        font-weight: normal;
-        padding: 14px 0;
-        border-radius: 2px;
-        text-transform: uppercase;
-      }
-      .forgot-password{
-        width:50%;
-        text-align: left;
-        text-decoration: underline;
-        color: #888;
-        font-size: 0.75rem;
-      }
+.container{
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+  height:100%
+}
 
-      /* fin testing registro */
+.login ,.register{width: 50%}
+
+/*Start Login Style*/
+.login{
+    float:left;
+    background-color: #fafafa;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    text-align: center;
+    padding-top: 100px;
+    margin-top: 20px;
+}
+.login h1{
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+input[type="email"] , input[type="password"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: none;
+    background-color: #eeeeef;
+}
+input[type="checkbox"]{
+    float: left;
+    margin-right: 5px;
+}
+.login span{
+    float: left
+}
+.login a{
+    float: right;
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s all ease-in-out;
+}
+.login a:hover{color: #F25C78;font-weight: bold}
+.login button{
+    width: 100%;
+    margin: 30px 0;
+    padding: 10px;
+    border: none;
+    background-color: #F25C78;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+.login button:hover{
+    width:97%;
+    font-size: 22px;
+    border-radius: 5px;
+    
+}
+.login hr{
+    width: 30%;
+    display: inline-block
+}
+
+.login p{
+    display: inline-block;
+    margin: 20px 10px 30px;
+}
+.login ul{
+    list-style: none;
+    margin-bottom:40px;  
+}
+.login ul li{
+    display: inline-block;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.login ul li:hover{opacity: 0.6}
+.login ul li:last-child{margin-right: 0}
+
+/*Start Register Style*/
+.register{
+    float: right;
+    background-image: linear-gradient(135deg, #F25C78 5%, #7291F9 95%);
+    height: 100%;
+    color:#fff;
+    border-radius:  0 10px 10px  0;
+    text-align: center;
+    padding: 100px 0;
+}
+.register h2{
+    margin: 30px 0;
+    font-size: 50px;
+    letter-spacing: 3px
+}
+.register p{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.register button{
+    background-color: transparent;
+    border: 1px solid #FFF;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition:0.2s all  ease-in-out;
+}
+.register button:hover{
+    color: #F25C78;
+    background-color: #fff;
+    cursor: pointer;
+}
