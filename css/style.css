@@ -84,6 +84,7 @@ nav {
     top: 0;
     position: fixed;
     justify-content: end;
+    padding: 20px;
 }
 
 li a {
