@@ -93,6 +93,8 @@ li a {
     font-size:larger;
     text-align: center;
     color: #161616;
+    padding: 20px;
+    margin: 20px;
 }
 
 /* SUBITEMS DE LA NAVBAR */
