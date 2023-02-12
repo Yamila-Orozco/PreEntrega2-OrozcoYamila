@@ -94,24 +94,23 @@
             <div class="wrapper">
                 <div class="card">
                         <p class="card-content"><img class="cardimage" src="./assets/img/prototipo/cardscursosingles.png" alt="imagen curso inglés">
-                        <button class="card-btn">Leer Más</button>
+                        <button class="card-btn"><a href="./views/cursos/cursosingles.html">Leer Más</button>
                     </div>
                     <div class="card">
                         <p class="card-content"><img class="cardimage" src="./assets/img/prototipo/cardscursosdocentes.png" alt="imagen cursos docentes">
-                        <button class="card-btn">Leer Más</button>
+                        <button class="card-btn"><a href="./views/cursos/cursosdocentes.html">Leer Más</button>
                     </div>
                     <div class="card">
                         <p class="card-content"><img class="cardimage" src="./assets/img/prototipo/cardsrecursos.png" alt="imagen Recursos">
-                        <button class="card-btn">Leer Más</button>
+                        <button class="card-btn"><a href="./views/recursos/recursos.html">Leer Más</button>
                     </div>
                     <div class="card">
                         <p class="card-content"><img class="cardimage" src="./assets/img/prototipo/cardsblog.png" alt="imagen Blog">
-                        <button class="card-btn">Leer Más</button>
+                        <button class="card-btn"><a href="./views/blog.html">Leer Más</button>
                     </div>
                 </div>
             </div>
         <div> 
-    <!-- CORREGIR falta icons scroll -->
         </div>
     </div>
 </section>
@@ -142,11 +141,14 @@
                                    <!--SECCIÓN SOBRE INVESTIGACIÓN-->
 <section>
     <h2>La pasión por aprender</h2>
-    <div class="alignhalf">
-        <img src="./assets/gif/movlearnpaper.gif" alt="movlearngif">  
-        <p class="bluebookspapertexture">La curiosidad, las ganas y la pasión por la educación nos puso en este camino. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, ex ea facilis aliquam voluptatum iure dicta esse maiores praesentium ipsam quos pariatur aperiam impedit sunt deleniti sit sint doloremque! Ratione?
-        Consequatur suscipit consectetur mollitia praesentium. Reiciendis fugiat, at vitae inventore esse corporis, dicta modi maiores eum minus ipsum beatae tempore nesciunt repellendus aspernatur reprehenderit rerum.<p>
-    </div>    
+<!-- sistema de grillas bootstrap -->
+    <div class="container text-center">
+        <div class="row row-cols-2">
+          <div class="col"> <img src="./assets/gif/movlearnpaper.gif" alt="movlearngif"></div>
+          <div class="col"><p class="bluebookspapertexture">La curiosidad, las ganas y la pasión por la educación nos puso en este camino. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, ex ea facilis aliquam voluptatum iure dicta esse maiores praesentium ipsam quos pariatur aperiam impedit sunt deleniti sit sint doloremque! Ratione?
+            Consequatur suscipit consectetur mollitia praesentium. Reiciendis fugiat, at vitae inventore esse corporis, dicta modi maiores eum minus ipsum beatae tempore nesciunt repellendus aspernatur reprehenderit rerum.<p></div>
+        </div>
+      </div>
 </section>
                             <!-- SECCIÓN VIDEO -->
 <section>
@@ -156,34 +158,40 @@
                                        <!--SECCIÓN FORMULARIO CONTACTARSE-->
 <section>
     <h2>Suscríbete para descargar recursos gratuitos</h2>
-    <div class="alignhalf">
-        <div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, quibusdam maxime? Aspernatur eaque, expedita error architecto, quo perferendis totam repellat sunt sequi nesciunt voluptatem, a voluptas incidunt magni neque omnis.
-            </p>
+<!-- GRID BOOTSTRAP-->
+    <div class="container text-center">
+        <div class="row row-cols-2">
+            <div class="col-lg-4">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, quibusdam maxime? Aspernatur eaque, expedita error architecto, quo perferendis totam repellat sunt sequi nesciunt voluptatem, a voluptas incidunt magni neque omnis.
+                </p>
+            </div>
+            <div class="col-lg-8">
+                <form class= formsbackground action="enviar.php" method="get" enctype="text/plain">
+                    <fieldset>
+                        <legend>Contactanos</legend>
+                        <div>
+                            <label for="nombre" >Nombre <span>*</span></label>
+                            <input type="text" autocapitalize="words" placeholder="Ingrese su nombre" id="nombre">
+                        </div>
+                        <div>
+                            <label for="correo">Correo<span>*</span></label>
+                            <input type="email" autocapitalize="words"  placeholder="Ingrese su email" id="correo" required>
+                        </div>
+                        <div>
+                            <label for="pwd">password<span>*</span></label>
+                            <input type="Contraseña" placeholder="Ingrese su contraseña" id="pwd">
+                        </div>
+                        <div>
+                            <label for="mensaje">Mensaje<span>*</span></label>
+                            <textarea name="Mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                        </div>
+                        <input class="main-btn" type="submit" value="Enviar">
+                    </fieldset>
+                </form>
+            </div>
         </div>
-        <form class= formsbackground action="enviar.php" method="get" enctype="text/plain">
-            <fieldset>
-                <legend>Contactanos</legend>
-                <div>
-                    <label for="nombre" >Nombre <span>*</span></label>
-                    <input type="text" autocapitalize="words" placeholder="Ingrese su nombre" id="nombre">
-                </div>
-                <div>
-                    <label for="correo">Correo<span>*</span></label>
-                    <input type="email" autocapitalize="words"  placeholder="Ingrese su email" id="correo" required>
-                </div>
-                <div>
-                    <label for="pwd">password<span>*</span></label>
-                    <input type="Contraseña" placeholder="Ingrese su contraseña" id="pwd">
-                </div>
-                <div>
-                    <label for="mensaje">Mensaje<span>*</span></label>
-                    <textarea name="Mensaje" id="mensaje" cols="30" rows="10"></textarea>
-                </div>
-                <input class="main-btn" type="submit" value="Enviar">
-            </fieldset>
-        </form>
     </div>
+
 </section>
 <!-- go up section -->
 <div class="scroll">
@@ -191,12 +199,82 @@
 </div>
 
                                 <!--FOOTER-->
-<footer class="footer">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus amet minus aperiam minima suscipit veritatis, itaque dignissimos, accusamus, reiciendis nemo corrupti nesciunt. Libero voluptate sed odit quis quae error modi dignissimos reprehenderit sint ab distinctio cum corrupti quaerat enim velit, nesciunt, voluptatem iure cumque accusantium beatae corporis quia voluptatum alias omnis illum eius voluptate ratione error tenetur. Molestiae.</p>
+<footer class="footer-section">
+<!-- sistema de grillas BS-->
+    <div class="container">
+        <div class="footer-cta pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="cta-text">
+                            <h4>Encontranos</h4>
+                            <span>Zona Oeste, Buenos Aires</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-phone"></i>
+                        <div class="cta-text">
+                            <h4>LLamanos</h4>
+                            <span>1136559914</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="far fa-envelope-open"></i>
+                        <div class="cta-text">
+                            <h4>Envianos un Mail</h4>
+                            <span>movimientolearn@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-content pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-social-icon">
+                            <span>Follow us</span>
+                            <a href="https://www.youtube.com/channel/UCvJVwHw4owKUyUPkPt68BJg"><i class="fa-brands fa-youtube socialneticons"></i></a>
+                            <a href="https://www.instagram.com/missorozcoyamila/"><i class="fa-brands fa-instagram socialneticons"></i></a>
+                            <a href="https://ar.linkedin.com/in/yamila-orozco?original_referer=https%3A%2F%2Fwww.google.com%2F"><i class="fa-brands fa-linkedin socialneticons"></i></a>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Subscribe</h3>
+                        </div>
+                        <div class="subscribe-form">
+                            <form action="#">
+                                <input type="text" placeholder="Email Address">
+                                <button><i class="fab fa-telegram-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                    <div class="copyright-text">
+                        <p>Copyright &copy; 2023, All Right Reserved</p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
 
-    <a href="https://www.youtube.com/channel/UCvJVwHw4owKUyUPkPt68BJg"><i class="fa-brands fa-youtube socialneticons"></i></a>
-    <a href="https://www.instagram.com/missorozcoyamila/"><i class="fa-brands fa-instagram socialneticons"></i></a>
-    <a href="https://ar.linkedin.com/in/yamila-orozco?original_referer=https%3A%2F%2Fwww.google.com%2F"><i class="fa-brands fa-linkedin socialneticons"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 
 <!--Scripts finales -->
