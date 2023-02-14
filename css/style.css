@@ -681,3 +681,8 @@ ul {
 }
 
 /* media query */
+
+/* overlapping */
+main .overlapping {
+display: block
+}
