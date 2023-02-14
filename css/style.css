@@ -686,3 +686,10 @@ ul {
 main .overlapping {
 display: block
 }
+
+@media screen and (max-width: 767px) {
+    img #logo {
+      max-width: 90%;
+      display: block;
+    }
+   }
