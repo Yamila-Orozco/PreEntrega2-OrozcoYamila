@@ -682,14 +682,21 @@ ul {
 
 /* media query */
 
-/* overlapping */
-main .overlapping {
-display: block
-}
 
+/* media query del logo NO FUNCIONA */
 @media screen and (max-width: 767px) {
     img #logo {
       max-width: 90%;
       display: block;
     }
    }
+
+   /* MEDIA QUERY */
+   @media handheld and (max-width: 480px),
+   screen and (max-device-width: 480px),
+   screen and (max-width: 480px) 
+   {
+    /* JUSTIFICAR EN EL CENTRO */
+
+   }
+
