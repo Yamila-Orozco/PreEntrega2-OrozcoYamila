@@ -30,7 +30,7 @@
 <header>
 <!--NAV-BAR-->
     <nav class="navbar navbar-expand-lg menu">
-        <li> <a href="./index.html"><img #logo class= "lg-animation"src="./assets/img/logo172x172.png" alt="logoindex"/></a> </li>
+        <li> <a href="./index.html"><img class= "logo lg-animation"src="./assets/img/logo172x172.png" alt="logoindex"/></a> </li>
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -68,28 +68,30 @@
 
 </header>
 <!-- PANTALLA PPAL -->
-<main class="maincontainer">
-        <h1>Movimiento Learn</h1>
-        <h2>Aprender es crear Posibilidades</p>
-        <img src="./assets/gif/movlearnexplanation.gif" alt="videodeincio" class="container-fluid" >
-        <h3>Empezá a crear las posibilidades de tu vida</h3>
-
-        <div class="buttonssidebyside">
-                <a href="./views/login.html" class="start-btn">Iniciar </a>
-                <a href="./views/login.html" class="secondary-btn">Registrate </a>
+<main class="maincontainer text-center">
+    <div class="row">
+        <h1 class="col-12 responsive-font">Movimiento Learn</h1>
+        <h2 class="col-12 responsive-font">Aprender es crear Posibilidades</p>
+        <img src="./assets/gif/movlearnexplanation.gif" alt="videodeincio" class="col-12 container-fluid" >
+        <h3 class="col-12 responsive-font">Empezá a crear las posibilidades de tu vida</h3>
+    </div>
+        <div class="row buttonssidebyside">
+                <a href="./views/login.html" class="col-12 start-btn">Iniciar </a>
+                <a href="./views/login.html" class="col-12 secondary-btn">Registrate </a>
         </div>
-        <aside class="socialneticons flexcolumn"><!-- no se si seria aside o solo un div? -->
+    
+    <aside class="d-none d-lg-block socialneticons flexcolumn">
             <a href="https://www.youtube.com/channel/UCvJVwHw4owKUyUPkPt68BJg"><i class="fa-brands fa-youtube"></i></a>
             <a href="https://www.instagram.com/missorozcoyamila/"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://ar.linkedin.com/in/yamila-orozco?original_referer=https%3A%2F%2Fwww.google.com%2F"><i class="fa-brands fa-linkedin"></i></a>
-        </aside>
+    </aside>
 </main>
 
 <!-- SECCIÓN CURSOS -->
 <section class="bluetornpapertexture"> 
     <div> 
-        <h2>Mejora tu vida aprendiendo</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae animi similique expedita harum. Dolore hic praesentium ratione vero adipisci. At iusto dolores laboriosam ullam quod</p>
+        <h2 class="responsive-font">Mejora tu vida aprendiendo</h2>
+        <p class="responsive-font">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae animi similique expedita harum. Dolore hic praesentium ratione vero adipisci. At iusto dolores laboriosam ullam quod</p>
         <div> <!-- contenedor cards -->
             <div class="wrapper">
                 <div class="card">
@@ -141,28 +143,31 @@
 </section>
 
 <!--SECCIÓN SOBRE INVESTIGACIÓN-->
-<section>
-    <h2>La pasión por aprender</h2>
 <!-- sistema de grillas bootstrap -->
-    <div class="container text-center">
+<section class="container">
+    <div class="row">
+    <h2 class="col-12">La pasión por aprender</h2>
         <div class="row row-cols-2">
           <div class="col-lg-6 col-md-6 col-12"> <img src="./assets/gif/movlearnpaper.gif" alt="movlearngif"></div>
-          <div class="col-lg-6 col-md-6 col-12"><p class="bluebookspapertexture">La curiosidad, las ganas y la pasión por la educación nos puso en este camino. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, ex ea facilis aliquam voluptatum iure dicta esse maiores praesentium ipsam quos pariatur aperiam impedit sunt deleniti sit sint doloremque! Ratione?
-            Consequatur suscipit consectetur mollitia praesentium. Reiciendis fugiat, at vitae inventore esse corporis, dicta modi maiores eum minus ipsum beatae tempore nesciunt repellendus aspernatur reprehenderit rerum.<p></div>
+          <div class="overlapping col-lg-6 col-md-6 col-12"><p class="bluebookspapertexture">La curiosidad, las ganas y la pasión por la educación nos puso en este camino. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, ex ea facilis aliquam voluptatum iure dicta esse<p></div>
         </div>
       </div>
 </section>
+
                             <!-- SECCIÓN VIDEO -->
-<section>
-    <h2>Asi aprendemos</h2>
-        <iframe class="containervideo" src="https://www.youtube.com/embed/swwPjvluevk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<section class="container">
+    <div class="row">
+        <h2 class="overlapping col-12">Asi aprendemos</h2>
+        <iframe class="containervideo col-12" src="https://www.youtube.com/embed/swwPjvluevk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
 </section>
+
                                        <!--SECCIÓN FORMULARIO CONTACTARSE-->
-<section>
-    <h2>Suscríbete para descargar recursos gratuitos</h2>
+<section class="container text-center">
+    <div class="row row-cols-2">
+    <h2 class="col-12">Suscríbete para descargar recursos gratuitos</h2>
 <!-- GRID BOOTSTRAP-->
-    <div class="container text-center">
-        <div class="row row-cols-2">
             <div class="col-lg-4">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, quibusdam maxime? Aspernatur eaque, expedita error architecto, quo perferendis totam repellat sunt sequi nesciunt voluptatem, a voluptas incidunt magni neque omnis.
                 </p>
@@ -192,8 +197,6 @@
                 </form>
             </div>
         </div>
-    </div>
-
 </section>
 <!-- go up section -->
 <div class="scroll">

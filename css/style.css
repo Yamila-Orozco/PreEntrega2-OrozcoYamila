@@ -16,14 +16,21 @@ gris blanco #F2F2F2
 
 /* INDEX */
 /*CONTENIDO GRAL INDEX */
+html, body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative;
+  }
+
 body {
     font-size: 16px;/* 1rem = 10px */
-    font-family:'Acier Bat Noir', sans-serif;
+    font-family:'Acier Bat Noir'
 }
  /* TIPOGRAFIAS */
 h1{
     font-family: 'Archistico', sans-serif;                                                
-    font-size: 5.8rem;  
+    font-size: 6.8rem;  
     font-weight: bolder;
     color: #4e52a0;
 }
@@ -37,10 +44,11 @@ h2 {
 }
 
 h3 {
-    font: 'Rift', sans-serif; 
-    font-size: 1.4rem;
-    font-weight: normal;
-    color: #4e52a0;
+    font: acier-bat-gris;
+    font-weight: 400;
+    font-size: 2rem;
+    font-style: normal;
+    color: #3B3086;
     }
 
 h1,h2,h3 {
@@ -451,7 +459,6 @@ div p .bluebookspapertexture {
 
 /*Start Login Style*/
 .login{
-    float:left;
     background-color: #fafafa;
     height: 100%;
     border-radius: 10px 0 0 10px;
@@ -472,14 +479,10 @@ input[type="email"] , input[type="password"]{
     background-color: #eeeeef;
 }
 input[type="checkbox"]{
-    float: left;
     margin-right: 5px;
 }
-.login span{
-    float: left
-}
+
 .login a{
-    float: right;
     text-decoration: none;
     color: #000;
     transition: 0.3s all ease-in-out;
@@ -525,7 +528,7 @@ input[type="checkbox"]{
 
 /*Start Register Style*/
 .register{
-    float: right;
+/*     float: right; */
     background-image: linear-gradient(135deg, #F25C78 5%, #7291F9 95%);
     height: 100%;
     color:#fff;
@@ -573,7 +576,7 @@ ul {
 .single-cta i {
   color: #F25C78;
   font-size: 30px;
-  float: left;
+/*   float: left; */
   margin-top: 8px;
 }
 .cta-text {
@@ -655,7 +658,7 @@ ul {
   color: #fff;
 }
 .subscribe-form button {
-    position: absolute;
+/*     position: absolute; */
     right: 0;
     background: #F25C78;
     padding: 13px 20px;
@@ -684,19 +687,42 @@ ul {
 
 
 /* media query del logo NO FUNCIONA */
-@media screen and (max-width: 767px) {
-    img #logo {
-      max-width: 90%;
-      display: block;
-    }
-   }
 
    /* MEDIA QUERY */
-   @media handheld and (max-width: 480px),
-   screen and (max-device-width: 480px),
-   screen and (max-width: 480px) 
-   {
-    /* JUSTIFICAR EN EL CENTRO */
+/* If the screen size is 1200px wide or more, set the font-size to 80px */
+@media (min-width: 1200px) {
+    .responsive-font {
+      font-size: 80px;
+    }
+  }
+  /* If the screen size is smaller than 1200px, set the font-size to 80px */
+  @media (max-width: 1199.98px) {
+    .responsive-font{
+      font-size: 30px;
+    }
+  }
 
-   }
+/* If the screen size is smaller than 1200px, set the size to 20vw */
+    @media (max-width: 1199.98px) {
+        .logo .overlapping{
+            width:20vw;
+            height:20vw;
+            padding: auto;
+            margin:auto;
+        }
+      }
+
+  /* parallax queries */
+  @media screen and (max-width: 768px) {
+	.parallax {
+		background-attachment: inherit;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+    img {
+    width: 100%;
+    }
+    }
+
 
