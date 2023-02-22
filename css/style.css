@@ -709,6 +709,7 @@ ul {
             height:20vw;
             padding: auto;
             margin:auto;
+
         }
       }
 
@@ -726,3 +727,9 @@ ul {
     }
 
 
+/* If the screen size is smaller than 1200px, set the size to 20vw */
+@media (max-width: 1199.98px) {
+    .formwrapper{
+        flex: column;
+    }
+}
