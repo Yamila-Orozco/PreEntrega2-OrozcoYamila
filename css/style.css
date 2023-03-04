@@ -1,612 +1,207 @@
-/* generales resets */
-*{
-    margin: 0;
-    padding: 0;
+@media (min-width: 1200px) {
+  .responsive-font {
+    font-size: 80px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .responsive-font {
+    font-size: 30px;
+  }
+  .logo .overlapping {
+    width: 20vw;
+    height: 20vw;
+    padding: auto;
+    margin: auto;
+  }
+  .formwrapper {
+    flex: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  .parallax {
+    background-attachment: inherit;
+  }
+}
+@media only screen and (max-width: 480px) {
+  img {
+    width: 100%;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
 }
 
-/* paleta de colores
-azul claro #7291F9 
-bordo claro #F25C78
-rosa #E66BBA
-violetaazul #310062
-azul marino #3B3086
-crema #FAE0D8
-gris blanco #F2F2F2
-*/
-
-/* INDEX */
-/*CONTENIDO GRAL INDEX */
-html, body {
-    overflow-x: hidden;
-  }
-  body {
-    position: relative;
-  }
+html {
+  overflow-x: hidden;
+}
 
 body {
-    font-size: 16px;/* 1rem = 10px */
-    font-family:'Acier Bat Noir'
-}
- /* TIPOGRAFIAS */
-h1{
-    font-family: 'Archistico', sans-serif;                                                
-    font-size: 6.8rem;  
-    font-weight: bolder;
-    color: #4e52a0;
+  overflow-x: hidden;
+  position: relative;
+  font-size: 16px;
 }
 
-h2 {
-    font-family: acier-bat-gris,sans-serif;
-    font-weight: 400;
-    font-size: 2.8rem;
-    font-style: normal;
-    color: #E66BBA;
-}
-
-h3 {
-    font: acier-bat-gris;
-    font-weight: 400;
-    font-size: 2rem;
-    font-style: normal;
-    color: #3B3086;
-    }
-
-h1,h2,h3 {
-    text-align: center;
-}
-
-p {
-    text-align: center;
-    font-family: 'Rift', sans-serif; 
-    font-size: 1.4rem;
-    font-weight: lighter;
-    color: #313131
-}
-
-/* HEADER */
-main{
-    margin-top: 255px;
-}
-
-/* NAV BAR */
-nav {
-    width: 100%;
-}
-
-/* NAV BAR LOGO */
-.logonavid {
-    max-width: 60px;
-    max-height: 60px;
-    background: transparent;
-    align-self: flex-end;
-}
-
-.menu {
-    font-family: 'Rift', sans-serif;
-    font-weight:lighter;
-    font-size:larger;
-    text-align: center;
-    color: #3B3086;
-    z-index:100;
-    background-color: #F2F2F2;
-    top: 0;
-    position: fixed;
-    justify-content: end;
-    padding: 20px;
-}
-
-li a {
-    font-family: 'Rift', sans-serif;
-    font-weight:bold;
-    font-size:larger;
-    text-align: center;
-    color: #161616;
-    padding: 20px;
-    margin: 20px;
-}
-
-/* SUBITEMS DE LA NAVBAR */
-    ul {
-        list-style: none;
-        font-size:0 /* truco por el uso de inline-block*/
-     }
-
-     li {
-        display: inline-block;
-        width: 25%;
-        position:relative;
-        font-size: 14px
-     }
-     ul ul {
-        position: absolute;
-        display: none;
-     }
-     ul ul li {
-        display: block;
-     }
-     ul li:hover ul {
-        display:block;
-     }
-     
-/* MAIN */
-/* video explicación */
-h2 img{
-    padding: 25px 50px;
-    background: transparent;
-    opacity: 0.87;
-     }
-
-/* CARDS*/
-.wrapper{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.card{
-   max-width: 300px;
-    min-height: 250px;
-    background: #F2F2F2;
-    padding: 30px;
-    border-radius: 3px;
-    box-sizing: border-box;
-    color: #310062;
-    margin:20px;
-    box-shadow: rgb(50 50 93 / 25%) 0px 30px 60px -12px, rgb(0 0 0 / 30%) 0px 18px 36px -18px;
-}
-
-.card:nth-child(2){
-   background: #E66BBA;
-}
-.card:last-child{
-   background: #E66BBA;
-}
-.card-title{
-    margin-top: 0;
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 1.2px;
-}
-.card-content{
-    font-size: 14px;
-    letter-spacing: 0.5px;
-    line-height: 1.5;
-}
-
-.cardimage{
-    object-fit: cover
-}
-.card-btn{
-    all: unset;
-    display: block;
-    margin-left: auto;
-    border: 2px solid #FFF;
-    padding: 10px 15px;
-    border-radius: 25px;
-    font-size: 10px;
-    font-weight: 600;
-    transition: all 0.5s;
-    cursor: pointer;
-    letter-spacing: 1.2px;
-}
-
-.card-btn:hover{
-   color:#673ab7;
-   background: #FFF;
-}
-.card:nth-child(2) .card-btn:hover{
-   color:#7291F9 ;
-   background: #FFF;
-}
-.card:last-child .card-btn:hover{
-   color:#673ab7;
-    background: #FFF;
-}
-
-/* FOOTER */
-.footer {
-    background-color: #527FD9;
-    text-align: left;
-    padding: 2%;
-}
-
-/* FOOTER ICONOS REDES */
-footer a i {
-    color: #fff;
-    font-size: 50px;
-    text-align: left;
-    justify-content: flex-end;
-    padding: 1%;
-}
-
-main a i{
-    color: #527FD9;
-    font-size: 50px;
-    text-align: left;
-    flex-direction: column;
-}
-
-.scroll a{
-    color: #7291F9;
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* ENLACES*/
-a {
-    text-decoration: none;
-}
-
-/* IMAGENES */
-img {
-    align-content: center;
-}
-
- /* CUADROS CONTENEDORES */
- .maincontainer{
-    padding: 10px;
-    margin-bottom: 10px;
- }
-
-/* TEXTURAS */
+/*colors*/
 .bluetornpapertexture {
-    border-radius: 99px;
-    background-image:url(../assets/texturas/bluetornpapertexture.png);
-    background-repeat:no-repeat;
+  border-radius: 99px;
+  background-image: url(../assets/texturas/bluetornpapertexture.png);
+  background-repeat: no-repeat;
 }
 
 .pinktornpapertexture {
-    border-radius: 99px;
-    background-image:url(../assets/texturas/pinktornpapertexture.png);
-    background-repeat:no-repeat; 
+  border-radius: 99px;
+  background-image: url(../assets/texturas/pinktornpapertexture.png);
+  background-repeat: no-repeat;
 }
 
 .bluebookspapertexture {
-    border-radius: 0;    
-    background-image:url(../assets/texturas/bluebookspapertexture.jpg);
-    padding: 8%;
+  border-radius: 0;
+  background-image: url(../assets/texturas/bluebookspapertexture.jpg);
+  padding: 8%;
 }
 
-.formsbackground {
-    display: flex;
-    flex-wrap: wrap;
-    border-radius: 20px;
-    background: #dce5f7;
-    padding: 20px;
-    margin: 20px;
+h1 {
+  font-family: "Archistico", sans-serif;
+  font-size: 6.8rem;
+  font-weight: bolder;
+  color: #4e52a0;
+  text-align: center;
 }
 
-/* VIDEOS */
-.containervideo {
-    display: flex;
-    justify-content: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 520px;
-    height: 520px;
+h2 {
+  font-family: "acier-bat-gris", sans-serif;
+  font-weight: 400;
+  font-size: 2.8rem;
+  font-style: normal;
+  color: #E66BBA;
+  text-align: center;
+}
+h2 img {
+  padding: 25px 50px;
+  background: transparent;
+  opacity: 0.87;
 }
 
-/* BOTONES */
-.main-btn {
-    background-color: #7291F9;
-    color: #fff;
-    padding: 1rem 1rem;
-    font-family: Rift;
-    font-size: 1rem;
-    text-decoration: none;
-    font-weight: bold;
-    text-align: center;
-    border: none;
-    border-radius: 4px;
+h3 {
+  font: acier-bat-gris;
+  font-weight: 400;
+  font-size: 2rem;
+  font-style: normal;
+  color: #F25C78;
+  text-align: center;
 }
 
-
-.secondary-btn {
-    background-color: #F2F2F2;
-    color: #F25C78;
-    padding: 1 rem 1.5rem;
-    margin-top: 0.5rem;
-    text-decoration: none;
-    border-radius: 1.5 rem;
-    border: #F25C78;
-    border-style: solid;
-    text-align: center;
-    font-family: Rift;
-    font-weight: bold;
-    font-size: 16px;
-    letter-spacing: 0em;
-    line-height: 30px;
-    width: 112px;
-    height: 48px;
+p {
+  text-align: center;
+  font-family: "Rift", sans-serif;
+  font-size: 1.4rem;
+  font-weight: lighter;
+  color: #161616;
 }
 
-.start-btn {
-    background-color: #F25C78;
-    color: #fff;
-    padding: 1 rem 1.5rem;
-    margin-top: 0.5rem;
-    text-decoration: none;
-    border-radius: 1.5 rem;
-    text-align: center;
-    border: none;
-    font-family: Rift;
-    font-weight: bold;
-    font-size: 16px;
-    letter-spacing: 0em;
-    line-height: 30px;
-    width: 112px;
-    height: 48px;
+nav {
+  width: 100%;
 }
 
-.buttonssidebyside{
-    display: flex;
-    justify-content: center;
-    min-height: 0px;
+.logonavid {
+  max-width: 60px;
+  max-height: 60px;
+  background: transparent;
+  align-self: flex-end;
 }
 
-       /* CURSORES */
-/* NAV HOVERS */
-header nav ul li a:hover {
-    color: #F25C78;
-    text-decoration:underline;
+.menu {
+  font-family: "Rift", sans-serif;
+  font-weight: lighter;
+  font-size: larger;
+  text-align: center;
+  color: #3B3086;
+  z-index: 100;
+  background-color: #F2F2F2;
+  top: 0;
+  position: fixed;
+  justify-content: end;
+  padding: 20px;
 }
 
-
-/* LOGO MOVIMIENTO */
-header nav ul li a img:hover {
-    transform: rotate(-180deg);
+li {
+  display: inline-block;
+  width: 25%;
+  position: relative;
+  font-size: 14px;
+}
+li a {
+  font-family: "Rift", sans-serif;
+  font-weight: bold;
+  font-size: larger;
+  text-align: center;
+  color: #161616;
+  padding: 20px;
+  margin: 20px;
 }
 
-.lg-animation:hover {
-    transform: rotate(-180deg)
-}
-/* FOOTER ICON HOVERS */
-footer a i:hover {
-    color: #F25C78;
-
-}
-/* MAIN ICON HOVERS */
-aside a i:hover {
-    color: #F25C78;
-}
-
-/* iconos */
-.socialneticons {
-top: 263px;
-height: 32px;
-left: 1447 px;
-width:32px;
-padding-inline: 20px;
-
-}
-
-.flexcolumn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    z-index:100;
-  }
-
-/* CONTENEDORES */
-section{
-    margin: 5%;
-}
-
-/* contenedores prueba */
-
-div p .bluebookspapertexture {
-    width: -moz-fit-content;
-    width: fit-content;
-    overflow-wrap: normal;
-}
-
-/* PARALLAX */
-.parallax {
-    background-image: url("../assets/texturas/whitepapertexture.png");
-    height: 600px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;   
-    margin-bottom:50px;
-   }
-   
-.parallaxblog {
-
-    background-image: url("../assets/texturas/mathpapertexture.png");
-    height: 600px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;   
-    margin-bottom:50px;
-   }
-
-   /* ALINEACIÓN */
-.alignmentcenter{
-    text-align:center;
-}
-
-.alignhalf {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.alignhalf :first-child {
-        align-self: center;
-    }
-/* TABLA DE RECURSOS STYLE */
-.formstyle {
-    border: 5px; 
-    border-color: #673ab7;
-    border-style:solid;
-    padding: 10px; 
-    align-content: center}
-
-    /* testing registrarse btn */
-.container{
-    width: 80%;
-    margin: auto;
-    padding: 20px;
-  height:100%
-}
-
-.login ,.register{width: 50%}
-
-/*Start Login Style*/
-.login{
-    background-color: #fafafa;
-    height: 100%;
-    border-radius: 10px 0 0 10px;
-    text-align: center;
-    padding-top: 100px;
-    margin-top: 20px;
-}
-.login h1{
-    margin-bottom: 40px;
-    font-size: 2.5em;
-}
-
-input[type="email"] , input[type="password"]{
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 30px;
-    border: none;
-    background-color: #eeeeef;
-}
-input[type="checkbox"]{
-    margin-right: 5px;
-}
-
-.login a{
-    text-decoration: none;
-    color: #000;
-    transition: 0.3s all ease-in-out;
-}
-.login a:hover{color: #F25C78;font-weight: bold}
-.login button{
-    width: 100%;
-    margin: 30px 0;
-    padding: 10px;
-    border: none;
-    background-color: #F25C78;
-    color: #fff;
-    font-size: 20px;
-    cursor: pointer;
-    transition: 0.3s all ease-in-out;
-}
-.login button:hover{
-    width:97%;
-    font-size: 22px;
-    border-radius: 5px;
-    
-}
-.login hr{
-    width: 30%;
-    display: inline-block
-}
-
-.login p{
-    display: inline-block;
-    margin: 20px 10px 30px;
-}
-.login ul{
-    list-style: none;
-    margin-bottom:40px;  
-}
-.login ul li{
-    display: inline-block;
-    margin-right: 30px;
-    cursor: pointer;
-}
-.login ul li:hover{opacity: 0.6}
-.login ul li:last-child{margin-right: 0}
-
-/*Start Register Style*/
-.register{
-/*     float: right; */
-    background-image: linear-gradient(135deg, #F25C78 5%, #7291F9 95%);
-    height: 100%;
-    color:#fff;
-    border-radius:  0 10px 10px  0;
-    text-align: center;
-    padding: 100px 0;
-}
-.register h2{
-    margin: 30px 0;
-    font-size: 50px;
-    letter-spacing: 3px
-}
-.register p{
-    font-size: 18px;
-    margin-bottom: 30px;
-}
-.register button{
-    background-color: transparent;
-    border: 1px solid #FFF;
-    border-radius: 20px;
-    padding: 10px 20px;
-    color: #fff;
-    font-size: 20px;
-    text-transform: uppercase;
-    transition:0.2s all  ease-in-out;
-}
-.register button:hover{
-    color: #F25C78;
-    background-color: #fff;
-    cursor: pointer;
-}
-
-/* footer style test */
 ul {
-    margin: 0px;
-    padding: 0px;
+  list-style: none;
+  font-size: 0;
+  margin: 0px;
+  padding: 0px;
 }
+ul ul {
+  position: absolute;
+  display: none;
+}
+ul ul li {
+  display: block;
+}
+ul li:hover ul {
+  display: block;
+}
+
 .footer-section {
   background: #7291F9;
   position: relative;
 }
+
 .footer-cta {
-  border-bottom: 1px solid #373636;
+  border-bottom: 1px solid #878787;
 }
+
 .single-cta i {
   color: #F25C78;
   font-size: 30px;
-/*   float: left; */
   margin-top: 8px;
 }
+
 .cta-text {
   padding-left: 15px;
   display: inline-block;
 }
 .cta-text h4 {
-  color: #fff;
+  color: #F2F2F2;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 2px;
 }
 .cta-text span {
-  color: #757575;
+  color: #878787;
   font-size: 15px;
 }
+
 .footer-content {
   position: relative;
   z-index: 2;
 }
 
 .footer-social-icon span {
-  color: #fff;
+  color: #F2F2F2;
   display: block;
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 .footer-social-icon a {
-  color: #fff;
+  color: #F2F2F2;
   font-size: 16px;
   margin-right: 15px;
 }
@@ -619,7 +214,7 @@ ul {
 }
 
 .footer-widget-heading h3 {
-  color: #fff;
+  color: #ff5e14;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 40px;
@@ -634,18 +229,20 @@ ul {
   width: 50px;
   background: #F25C78;
 }
+
 .footer-widget ul li {
   display: inline-block;
   width: 50%;
   margin-bottom: 12px;
 }
-.footer-widget ul li a:hover{
-  color: #ff5e14;
-}
 .footer-widget ul li a {
   color: #878787;
   text-transform: capitalize;
 }
+.footer-widget ul li a:hover {
+  color: #ff5e14;
+}
+
 .subscribe-form {
   position: relative;
   overflow: hidden;
@@ -655,81 +252,53 @@ ul {
   padding: 14px 28px;
   background: #2E2E2E;
   border: 1px solid #2E2E2E;
-  color: #fff;
+  color: #ff5e14;
 }
 .subscribe-form button {
-/*     position: absolute; */
-    right: 0;
-    background: #F25C78;
-    padding: 13px 20px;
-    border: 1px solid #ff5e14;
-    top: 0;
+  right: 0;
+  background: #F25C78;
+  padding: 13px 20px;
+  border: 1px solid #ff5e14;
+  top: 0;
 }
 .subscribe-form button i {
-  color: #fff;
+  color: #ff5e14;
   font-size: 22px;
   transform: rotate(-6deg);
 }
-.copyright-area{
-  background: #202020;
-  padding: 10px
+
+.copyright-area {
+  background: #161616;
+  padding: 10px;
 }
+
 .copyright-text p {
   margin: 0;
   font-size: 14px;
   color: #878787;
 }
-.copyright-text p a{
+.copyright-text p a {
   color: #ff5e14;
 }
 
-/* media query */
-
-
-/* media query del logo NO FUNCIONA */
-
-   /* MEDIA QUERY */
-/* If the screen size is 1200px wide or more, set the font-size to 80px */
-@media (min-width: 1200px) {
-    .responsive-font {
-      font-size: 80px;
-    }
-  }
-  /* If the screen size is smaller than 1200px, set the font-size to 80px */
-  @media (max-width: 1199.98px) {
-    .responsive-font{
-      font-size: 30px;
-    }
-  }
-
-/* If the screen size is smaller than 1200px, set the size to 20vw */
-    @media (max-width: 1199.98px) {
-        .logo .overlapping{
-            width:20vw;
-            height:20vw;
-            padding: auto;
-            margin:auto;
-
-        }
-      }
-
-  /* parallax queries */
-  @media screen and (max-width: 768px) {
-	.parallax {
-		background-attachment: inherit;
-	}
+.parallax {
+  background-image: url("../assets/texturas/whitepapertexture.png");
+  height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
 }
 
-@media only screen and (max-width: 480px) {
-    img {
-    width: 100%;
-    }
-    }
-
-
-/* If the screen size is smaller than 1200px, set the size to 20vw */
-@media (max-width: 1199.98px) {
-    .formwrapper{
-        flex: column;
-    }
+.parallaxblog {
+  background-image: url("../assets/texturas/mathpapertexture.png");
+  height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
 }
+
+/*# sourceMappingURL=style.css.map */

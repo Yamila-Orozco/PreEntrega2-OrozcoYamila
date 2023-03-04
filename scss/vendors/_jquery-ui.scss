@@ -1,0 +1,31 @@
+@media (min-width: 1200px) {
+	.responsive-font {
+		font-size: 80px;
+	}
+}
+@media (max-width: 1199.98px) {
+	.responsive-font {
+		font-size: 30px;
+	}
+	.logo {
+		.overlapping {
+			width: 20vw;
+			height: 20vw;
+			padding: auto;
+			margin: auto;
+		}
+	}
+	.formwrapper {
+		flex: column;
+	}
+}
+@media screen and (max-width: 768px) {
+	.parallax {
+		background-attachment: inherit;
+	}
+}
+@media only screen and (max-width: 480px) {
+	img {
+		width: 100%;
+	}
+}

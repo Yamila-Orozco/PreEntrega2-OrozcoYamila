@@ -1,0 +1,31 @@
+/*colors*/
+$color_1: #4e52a0;
+$color_2: #E66BBA;
+$color_3: #F25C78;
+$color_4: #7291F9;
+$color_5: #161616;
+$color_6: #3B3086;
+$color_7: #F2F2F2;
+$color_8: #878787;
+$color_9: #ff5e14;
+
+
+$background-color_7: transparent;
+
+$border-color_1: #673ab7;
+
+.bluetornpapertexture {
+	border-radius: 99px;
+	background-image: url(../assets/texturas/bluetornpapertexture.png);
+	background-repeat: no-repeat;
+}
+.pinktornpapertexture {
+	border-radius: 99px;
+	background-image: url(../assets/texturas/pinktornpapertexture.png);
+	background-repeat: no-repeat;
+}
+.bluebookspapertexture {
+	border-radius: 0;
+	background-image: url(../assets/texturas/bluebookspapertexture.jpg);
+	padding: 8%;
+}
